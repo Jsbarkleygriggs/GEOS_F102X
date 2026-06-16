@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css" />
+		<link rel="stylesheet" href="dist/reveal.css" />
+		<link rel="stylesheet" href="dist/theme/black.css" />
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h1>Magnetometers of Alaska</h1>
+					<p>Jonah Barkley-Griggs</p>
+					<p>2026 GEOS F102</p>
+				</section>
+
+				<section data-auto-animate>
+					<h3>What is a Substorm?</h3>
+				</section>
+				<section data-auto-animate>
+					<h3>What is a Substorm?</h3>
+					<img
+						src="./assets/earth-sun.png"
+					/>
+					<small>[1]</small>
+				</section>
+				<section data-auto-animate>
+					<h3>What is a Substorm?</h3>
+					<span class="r-stack">
+						<img src="./assets/earth-sun.png"/>
+						<img src="./assets/ring-current.png"/>
+						<img
+							class="fragment"
+							src="./assets/tail-current.png"
+						/><img
+							class="fragment"
+							src="./assets/Chapman-Ferrano.png"
+						/><img
+							class="fragment"
+							src="./assets/Region1.png"
+						/><img
+							class="fragment"
+							src="./assets/Region2.png"
+						/>
+					</span>
+					<small><em>[2:A] ring current system. [2:B] tail current system. [2:C] Chapman-Ferraro current system. [2:D] Region 1 current system. [2:E] Region 2 current system</em></small>
+				</section>
+
+
+				<section>
+					<section data-auto-animate>
+						<h3>Why Does it Matter?</h3>
+					</section>
+					<section data-auto-animate>
+						<h3>Why Does it Matter?</h3>
+						<div style="display: flex; align-items: center; gap: 2rem;">
+							<span>
+								<img
+									src="./assets/GIC.jpg"
+								/>
+								<small>[5]</small>
+							</span>
+							<ul>
+								<li>GIC's are responsible for damage to infrastructure</li>
+							</ul>
+						</div>
+					</section>
+					<section data-auto-animate>
+						<h3>Why Does it Matter?</h3>
+						<div style="display: flex; align-items: center; gap: 2rem;">
+							<span>
+								<img
+									src="./assets/GIC.jpg"
+									width="330"
+								/>
+								<small>[5]</small>
+								<img
+									src="./assets/sats.png"
+									width="330"
+								/>
+								<small>[6]</small>
+							</span>
+							<ul>
+								<li>GIC's are responsible for damage to infrastructure</li>
+								<li>Magnetic storms are responsible for satellite losses</li>
+								<li class="fragment">These are both preventable with good forecasting</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+
+
+				<section data-auto-animate>
+					<h3>What does a substorm look like?</h3>
+					<div style="display: flex; align-items: center; gap: 2rem;">
+						<span class="r-frame">
+							<p>USGS CMO<small>[3]</small></p>
+							<img src="./assets/graph.png" style="margin-top: 1px;"/>
+							<ul>
+								<li class="fragment">Macro-Scale \(\frac{d^2 b}{dt^2} \) homogeneity</li>
+								<li class="fragment">Macro-Scale \(\frac{db}{d t} \) heterogeneity</li>
+							</ul>
+						</span>
+						<img
+							src="./assets/Solar_Wind.gif"
+							width="500"
+						/>
+					</div>
+				</section>
+				<section data-auto-animate>
+						<img
+							src="./assets/Solar_Wind.gif"
+							width="580"
+						/>
+					<p><small>Readings shown as ΔnT, vertical component represented by color.</small></p>
+				</section>
+
+
+				<section data-auto-animate>
+					<h3>magnetometer coverage</h3>
+					<img
+						src="assets/Sites.jpg"
+						width="800"
+					/>
+				</section>
+				<section data-auto-animate>
+					<h3 class="fragment strike" data-fragment-index="3">magnetometer coverage</h3>
+					<h3 class="fragment" data-fragment-index="3" data-id="sparse">sparse coverage</h3>
+					<div style="display: flex; align-items: center; gap: 2rem;">
+						<img
+							src="assets/Sites.jpg"
+							width="700"
+						/>
+						<ul>
+							<li>Two primary open-data Magnetometer Networks in AK</li>
+							<li class="fragment" data-fragment-index="2">Comprising only ten sites</li>
+						</ul>
+					</div>
+				</section>
+
+
+				<section data-auto-animate>
+					<div style="display: flex; align-items: center; gap: 2rem;">
+						<h3 data-id="sparse">sparse coverage</h3>
+						<h3>= low resolution</h3>
+					</div>
+					<div class="r-stack">
+						<img
+							data-id="map"
+							src="./assets/Layout6.jpg"
+							width="650"
+							style="margin-top: 30px;"
+						/>
+						<span class="fragment fade-up">
+							<img
+								data-id="map"
+								src="./assets/Layout6-cropped.jpg"
+								width="700"
+							/>
+							<h3> = High uncertainty</h3>
+						</span>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<div style="display: flex; align-items: center; gap: 2rem;">
+						<h3>sparse coverage</h3>
+						<h3>= low resolution</h3>
+					</div>
+					<div class="r-stack">
+						<span>
+							<div style="display: flex; align-items: center; gap: 2rem;">
+								<img
+									data-id="map"
+									src="./assets/Layout6-cropped.jpg"
+									width="800"
+								/>
+								<ul>
+									<li>Ideal placement: every 100m <small>[4]</small></li>
+									<li class="fragment">lowest local homogeneity corresponds to greatest \(\frac{db}{d t} \) </li>
+								</ul>
+							</div>
+							<h3> = High uncertainty</h3>
+						</span>
+					</div>
+				</section>
+
+
+				<section>
+					<section data-auto-animate>
+						<h3>What does it mean?</h3>
+					</section>
+					<section data-auto-animate>
+						<h3>What does it mean?</h3>
+						<div style="display: flex; align-items: center; gap: 2rem;">
+							<img
+								src="./assets/Solar_Wind.gif"
+								width="500"
+							/>
+							<ul>
+								<li>Large scale magnetic storms are detectable</li>
+								<li class="fragment">Fine-scale variability dominates representational uncertainty</li>
+								<li class="fragment">Network density is the binding constraint on substorm models</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+
+
+				<section>
+					<h3>bibliography</h3>
+					<p>[1] <cite>study.com</cite></p>
+					<p>[2] <cite>doi:10.1002/2017RG000590</cite></p>
+					<p>[3] <cite>https://imag-data.bgs.ac.uk</cite></p>
+					<p>[4] <cite>doi:10.1007/s11214-008-9337-0</cite></p>
+					<p>[5] <cite>doi:10.1016/j.ijepes.2023.109657</cite></p>
+					<p>[6] <cite>https://svs.gsfc.nasa.gov/5193/</cite></p>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="dist/plugin/math.js"></script>
+		<script>
+		Reveal.initialize({
+
+		hash: true,
+		plugins: [RevealMath.KaTeX],
+		});
+		</script>
+	</body>
+</html>
